@@ -34,12 +34,10 @@ export default class Products {
       this.color
     }">
         <div class="cart__item__img">
-            <img src="${this.imageUrl}" alt="Photographie d'un canapé ${
-      this.name
-    }">
+            <img src="${this.imageUrl}" alt="${this.altTxt}">
         </div>
         <div class="cart__item__content">
-            <div class="cart__item__content__titlePrice">
+            <div class="cart__item__content__description">
                 <h2>${this.name}</h2>
                 <p>${this.price.toFixed(2)} €</p>
                 <p>${this.color}</p>
