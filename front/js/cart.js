@@ -16,9 +16,11 @@ async function loadProduct() {
     const reponse = await reponseJson;
 
     // création du produit grâce à la réponse
-    let produit = reponse;
-    produit.quantity = e.quantity;
-    produit.color = e.color;
+    let produit = Object.assign(reponse,e);
+    console.log(reponse);
+
+    /* produit.quantity = e.quantity;
+    produit.color = e.color; */
 
     // Injection du code HTML
     produit = new Products(reponse);
